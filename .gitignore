@@ -1,13 +1,26 @@
-# Backend
 Backend/target/
 Backend/uploads/
 
-# Frontend
 Frontend/node_modules/
 Frontend/dist/
 
-# General
+*.class
+*.jar
+*.war
+*.nar
+*.ear
+
 *.log
 .env
+.mtj.tmp/
+hs_err_pid*
+replay_pid*
+
 .vscode/
 .idea/
+.DS_Store
+Thumbs.db
+
+*.zip
+*.tar.gz
+*.ra
