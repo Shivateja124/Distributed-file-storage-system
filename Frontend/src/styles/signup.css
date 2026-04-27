@@ -1,0 +1,232 @@
+
+.signup-container {
+  position: relative;
+  min-height: calc(100vh - 170px);
+  width: 100%;
+  background-image: url("../assets/background_2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+    
+}
+
+.signup-card {
+  margin-top: 10px;
+  margin-left: 100px;
+  width: 400px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  padding: 25px 35px 10px 35px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+
+.lock-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.lock-icon {
+  width: 55px;
+  height: 55px;
+}
+
+
+
+.signup-card h2 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+  margin-bottom: 5px;
+  color: #000000;
+}
+
+.signup-card p {
+  font-size: 14px;
+  color: #0c1118;
+  margin-bottom: 10px;
+}
+
+
+.signup-card input[type="text"],
+.signup-card input[type="email"],
+.signup-card input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 5px;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  outline: none;
+}
+
+.signup-card input:focus {
+  border-color: #22c55e;
+}
+
+
+.signup-card .error {
+  color: red;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+
+.terms {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  margin: 15px 0;
+  gap: 8px;
+}
+
+.terms b {
+  color: #22c55e;
+  cursor: pointer;
+}
+
+
+
+.signup-btn {
+  width: 100%;
+  padding: 12px;
+
+  background-color: #22c55e;
+  border: none;
+  color: white;
+
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.signup-btn:hover {
+  background-color: #16a34a;
+}
+
+
+/* =========================
+   LOGIN LINK
+========================= */
+.login-text {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.login-text span {
+  color: #22c55e;
+  cursor: pointer;
+}
+
+
+/* =========================
+   FEATURE SECTION (OVERLAP)
+========================= */
+.feature-container {
+  position: absolute;
+  bottom: -80px;   /* 🔥 controls overlap */
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+
+  z-index: 10;
+}
+
+
+/* =========================
+   FEATURE WRAPPER
+========================= */
+.feature-wrapper {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+
+/* =========================
+   FEATURE CARD
+========================= */
+.feature-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 18px 20px;
+
+  width: 300px;
+  height: 90px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+
+/* =========================
+   FEATURE IMAGE
+========================= */
+.feature-img {
+  width: 48px;
+  height: 48px;
+}
+
+
+/* =========================
+   FEATURE TEXT
+========================= */
+.feature-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: left;
+}
+
+.feature-text h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
+}
+
+.feature-text p {
+  font-size: 13px;
+  color: #6b7280;
+  margin: 0;
+  line-height: 1.4;
+}
+
+
+/* =========================
+   RESPONSIVE (IMPORTANT)
+========================= */
+@media (max-width: 1024px) {
+  .feature-wrapper {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .signup-container {
+    justify-content: center;
+  }
+
+  .signup-card {
+    margin-left: 0;
+    width: 90%;
+  }
+
+  .feature-container {
+    position: static;
+    margin-top: 40px;
+  }
+}

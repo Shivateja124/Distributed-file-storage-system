@@ -1,0 +1,13 @@
+# Backend
+Backend/target/
+Backend/uploads/
+
+# Frontend
+Frontend/node_modules/
+Frontend/dist/
+
+# General
+*.log
+.env
+.vscode/
+.idea/

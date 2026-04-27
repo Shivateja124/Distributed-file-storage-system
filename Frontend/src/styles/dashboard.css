@@ -1,0 +1,159 @@
+.dashboard-container {
+  display: flex;
+  font-family: sans-serif;
+  background: #f8fafc;
+}
+
+
+.sidebar {
+  width: 240px;
+  background: white;
+  padding: 20px;
+  border-right: 1px solid #eee;
+}
+
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 19px;
+}
+
+.nav-icon {
+  width: 20px;
+  height: 20px;
+  fill: #1e293b;
+  font-weight: bold;
+}
+
+
+.active .nav-icon {
+  fill: #22c55e; 
+}
+
+.active {
+  color: #22c55e;
+  font-weight: 600;
+}
+
+.sidebar-divider {
+  border: none;
+  height: 1px;
+  background-color: #e5e7eb;
+  margin: 15px 0;
+}
+
+
+.logo {
+  margin-bottom: 20px;
+  color: #22c55e;
+}
+
+.sidebar ul {
+    text-align: left;
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.sidebar li:hover {
+  background: #f1f5f9;
+}
+
+.sidebar .active {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+/* STORAGE BOX */
+.storage-box {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f1f5f9;
+  border-radius: 10px;
+}
+
+.progress {
+  height: 6px;
+  background: #ddd;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.progress-fill {
+  width: 22%;
+  height: 100%;
+  background: #22c55e;
+  border-radius: 10px;
+}
+
+/* MAIN */
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+/* TOPBAR */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.topbar input {
+  padding: 10px;
+  width: 300px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.user {
+  font-weight: bold;
+}
+
+/* WELCOME */
+.welcome h2 {
+  margin-bottom: 5px;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  flex: 1;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* TABLE */
+.table-container {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
